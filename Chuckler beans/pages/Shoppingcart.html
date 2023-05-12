@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../Stylesheet/shoppingcart.css">
+    <script src="../Script/cart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Roboto+Mono&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Vina+Sans&family=Ysabeau:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="Logo"><a href="../pages/landingpage.html">Chuckler's Beans</a></div>
+    </nav>
+    <div class="div1"><h2>My Cart</h2></div>
+    <div class="main">
+        
+        <div class="pro1">
+            <img src="../Images/pro1.png" alt="best1">
+            <h3>Arabica</h3>
+            <p>Max. Weight: 500g</p>
+            <h4>₱450</h4>
+            <div class="bot1">
+                <button type="button" onclick="increment('quantity1')">+</button>
+                <input type="text" id="quantity1" value="0" size="5">
+                <button type="button" onclick="decrement('quantity1')">-</button>
+            </div>
+        </div>
+        <div class="pro2">
+            <img src="../Images/pro2.png">
+            <h3>Robusta</h3>
+            <p>Max. Weight: 500g</p>
+            <h4>₱450</h4>
+            <div class="bot2">
+                <button type="button" onclick="increment('quantity2')">+</button>
+                <input type="text" id="quantity2" value="0" size="5">
+                <button type="button" onclick="decrement('quantity2')">-</button>
+            </div>
+        </div>
+        <div class="pro3">
+            <img src="../Images/1.png" alt="excelsa">
+            <h3>Excelsa</h3>
+            <p>Max. Weight: 500g</p>
+            <h4>₱450</h4>
+            <div class="bot3">
+                <button type="button" onclick="increment('quantity3')">+</button>
+                <input type="text" id="quantity3" value="0" size="5">
+                <button type="button" onclick="decrement('quantity3')">-</button>
+            </div>
+        </div>
+        <div class="pro4">
+            <img src="../Images/2.png" alt="excelsa">
+            <h3>typica</h3>
+            <p>Max. Weight: 500g</p>
+            <h4>₱450</h4>
+            <div class="bot4">
+                <button type="button" onclick="increment('quantity4')">+</button>
+                <input type="text" id="quantity4" value="0" size="5">
+                <button type="button" onclick="decrement('quantity4')">-</button>
+            </div>
+        </div>
+        <div class="pro5">            
+            <img src="../Images/3.png" alt="excelsa">
+            <h3>liberica</h3>
+            <p>Max. Weight: 500g</p>
+            <h4>₱450</h4>
+            <div class="bot5">
+                <button type="button" onclick="increment('quantity5')">+</button>
+                <input type="text" id="quantity5" value="0" size="5">
+                <button type="button" onclick="decrement('quantity5')">-</button>
+            </div></div>
+        <div class="pro6">
+            <img src="../Images/4.png" alt="excelsa">
+            <h3>bourbon</h3>
+            <p>Max. Weight: 500g</p>
+            <h4>₱450</h4>
+            <div class="bot6">
+                <button type="button" onclick="increment('quantity6')">+</button>
+                <input type="text" id="quantity6" value="0" size="5">
+                <button type="button" onclick="decrement('quantity6')">-</button>
+            </div>
+        </div>
+        <div class="pro7">
+            <img src="../Images/5.png" alt="excelsa">
+            <h3>geisha</h3>
+            <p>Max. Weight: 500g</p>
+            <h4>₱450</h4>
+            <div class="bot7">
+                <button type="button" onclick="increment('quantity7')">+</button>
+                <input type="text" id="quantity7" value="0" size="5">
+                <button type="button" onclick="decrement('quantity7')">-</button>
+            </div>
+        </div>
+    </div>
+    <div class="checkout" >
+        <h2>Checkout</h2>
+        <div class="bill">
+            <table>
+                <tr>
+                    <th><label>ORDER SUMMARY</label></th>
+                </tr>
+                <tr>
+                    <td><label>Total Items:</label></td>
+                    <td><span id="numItems">0</span></td>
+                </tr>
+                <tr>
+                    <td><label>Shipping & Handling:</label></td>
+                    <td><span id="shippingFee">0</span></td>
+                </tr>
+                <td><label>Total Order:</label></td>
+                <td><p id="totalOrder">₱0.00</p></td>
+            </table>
+        </div>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+      
+</body>
+</html>

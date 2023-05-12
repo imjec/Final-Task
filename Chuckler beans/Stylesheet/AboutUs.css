@@ -1,0 +1,954 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgba(230, 230, 230, 0.877);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-content: center;
+  width: 80%;
+  height: 200vw;
+  margin: auto;
+}
+.About{
+  order:1;
+  width: 100%;
+  height: 120vw;
+  background-color: white;
+}
+
+.About h1{
+  font-size: 3em;
+  text-align: center;
+  font-family: 'Vina Sans', cursive;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.About p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 30px;
+  text-align: justify;
+  text-indent: 30px;
+  font-family: 'Ysabeau', sans-serif;
+
+
+}
+.Members{
+  width: 100%;
+  height: 100vw;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.members h1{
+  font-size: 3em;
+  text-align: center;
+  font-family: 'Vina Sans', cursive;
+  text-transform: uppercase;
+}
+.members {
+  order: 1;
+}
+.div1{
+  order: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.Daus {
+  width: 400px;
+  height: 550px;
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 10px;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Daus img {
+  order: 1;
+  border-radius: 10px;
+}
+.Daus h2{
+  order: 2;
+  font-family: 'Vina Sans', cursive;
+  text-transform: uppercase;
+}
+.Daus h3 {
+  order: 3;
+  font-family: 'Ysabeau', sans-serif;
+}
+.follow{
+  order: 4;
+  font-family: 'Vina Sans', cursive;
+}
+.share {
+  width: 100%;
+  order: 5;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  transition: .4s ease-in-out;
+  justify-content: space-evenly;
+}
+
+.btn1 {
+  order: 1;
+  position: relative;
+  width: 4em;
+  height: 4em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn1 .instagram {
+  margin-top: 0.1em;
+  fill: #cc39a4;
+}
+
+.btn1 .tooltiptext1 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+
+}
+
+.btn1 .tooltiptext1 .card {
+  width: 6em;
+  height: 6em;
+  background-color: white;
+}
+
+.btn1 .tooltiptext1 .account {
+  margin-top: 1em;
+}
+
+.btn1 .tooltiptext1 .username {
+  font-size: 15px;
+  margin-top: 0.7em;
+  font-weight: bold;
+}
+
+.btn1:hover .tooltiptext1 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn1:hover {
+  background-color: #cc39a4;
+}
+
+.btn1:hover .instagram {
+  fill: white;
+}
+
+.btn2 {
+  order: 2;
+  position: relative;
+  width: 4em;
+  height: 4em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn2 .twitter {
+  margin-top: .25em;
+  margin-left: .1em;
+  fill: #03A9F4;
+}
+
+.btn2 .tooltiptext2 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn2 .tooltiptext2 .card {
+  width: 6em;
+  height: 6em;
+  background-color: white;
+}
+
+.btn2 .tooltiptext2 .account {
+  margin-top: 1em;
+}
+
+.btn2 .tooltiptext2 .username {
+  font-size: 15px;
+  margin-top: 0.7em;
+  font-weight: bold;
+}
+
+.btn2:hover .tooltiptext2 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn2:hover {
+  background-color: #03A9F4;
+}
+
+.btn2:hover .twitter {
+  fill: white;
+}
+
+.btn3 {
+  order: 3;
+  position: relative;
+  width: 4em;
+  height: 4em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn3 .tooltiptext3 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn3 .tooltiptext3 .card {
+  width: 6em;
+  height: 6em;
+  background-color: white;
+}
+
+.btn3 .tooltiptext3 .account {
+  margin-top: 1em;
+}
+
+.btn3 .tooltiptext3 .username {
+  font-size: 15px;
+  margin-top: .7em;
+  font-weight: bold;
+}
+
+.btn3:hover .tooltiptext3 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn3:hover {
+  background-color: black;
+}
+
+.btn3:hover .git {
+  fill: white;
+}
+/** MERU **/
+.Meru {
+  width: 400px;
+  height: 550px;
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 10px;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Meru img {
+  order: 1;
+  border-radius: 10px;
+}
+.Meru h2{
+  order: 2;
+  font-family: 'Vina Sans', cursive;
+  text-transform: uppercase;
+  
+}
+.Meru h3 {
+  order: 3;
+  font-family: 'Ysabeau', sans-serif;
+}
+.follow2{
+  order: 4;
+  font-family: 'Ysabeau', sans-serif;
+}
+.div2{
+  order:3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10;
+}
+.share2 {
+  width: 100%;
+  order: 5;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  transition: .4s ease-in-out;
+  justify-content: space-evenly;
+}
+.btn1-2 {
+  order: 1;
+  position: relative;
+  width: 4em;
+  height: 4em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn1-2 .instagram {
+  margin-top: 0.1em;
+  fill: #cc39a4;
+}
+
+.btn1-2 .tooltiptext1 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+
+}
+
+.btn1-2 .tooltiptext1 .card {
+  width: 6em;
+  height: 6em;
+  background-color: white;
+}
+
+.btn1-2 .tooltiptext1 .account {
+  margin-top: 1em;
+}
+
+.btn1-2 .tooltiptext1 .username {
+  font-size: 15px;
+  margin-top: 0.3em;
+  font-weight: bold;
+}
+
+.btn1-2:hover .tooltiptext1 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn1-2:hover {
+  background-color: #cc39a4;
+}
+
+.btn1-2:hover .instagram {
+  fill: white;
+}
+
+.btn2-2 {
+  order: 2;
+  position: relative;
+  width: 4em;
+  height: 4em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn2-2 .twitter {
+  margin-top: .25em;
+  margin-left: .1em;
+  fill: #03A9F4;
+}
+
+.btn2-2 .tooltiptext2 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn2-2 .tooltiptext2 .card {
+  width: 6em;
+  height: 6em;
+  background-color: white;
+}
+
+.btn2-2 .tooltiptext2 .account {
+  margin-top: 1em;
+}
+
+.btn2-2 .tooltiptext2 .username {
+  font-size: 15px;
+  margin-top: 0.2em;
+  font-weight: bold;
+}
+
+.btn2-2:hover .tooltiptext2 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn2-2:hover {
+  background-color: #03A9F4;
+}
+
+.btn2-2:hover .twitter {
+  fill: white;
+}
+.btn3-2 {
+  order: 3;
+  position: relative;
+  width: 4em;
+  height: 4em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn3-2 .tooltiptext3 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn3-2 .tooltiptext3 .card {
+  width: 6em;
+  height: 6em;
+  background-color: white;
+}
+
+.btn3-2 .tooltiptext3 .account {
+  margin-top: 1em;
+}
+
+.btn3-2 .tooltiptext3 .username {
+  font-size: 15px;
+  margin-top: .7em;
+  font-weight: bold;
+}
+
+.btn3-2:hover .tooltiptext3 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn3-2:hover {
+  background-color: black;
+}
+
+.btn3-2:hover .git {
+  fill: white;
+}
+/***** Ritzel Baawa******/
+.Baawa {
+  width: 400px;
+  height: 550px;
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 10px;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Baawa img {
+  order: 1;
+  border-radius: 10px;
+}
+.Baawa h2{
+  order: 2;
+  font-family: 'Vina Sans', cursive;
+  text-transform: uppercase;
+  
+}
+.Baawa h3 {
+  order: 3;
+  font-family: 'Ysabeau', sans-serif;
+}
+.follow3{
+  order: 4;
+  font-family: 'Ysabeau', sans-serif;
+}
+.share3 {
+  width: 100%;
+  order: 5;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  transition: .4s ease-in-out;
+  justify-content: space-evenly;
+}
+
+.btn1-3 {
+  order: 1;
+  position: relative;
+  width: 4em;
+  height: 4em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn1-3 .instagram {
+  margin-top: 0.1em;
+  fill: #cc39a4;
+}
+
+.btn1-3 .tooltiptext1 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+
+}
+
+.btn1-3 .tooltiptext1 .card {
+  width: 6em;
+  height: 6em;
+  background-color: white;
+}
+
+.btn1-3 .tooltiptext1 .account {
+  margin-top: 1em;
+}
+
+.btn1-3 .tooltiptext1 .username {
+  font-size: 15px;
+  margin-top: 0.3em;
+  font-weight: bold;
+}
+
+.btn1-3:hover .tooltiptext1 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn1-3:hover {
+  background-color: #cc39a4;
+}
+
+.btn1-3:hover .instagram {
+  fill: white;
+}
+
+.btn2-3 {
+  order: 2;
+  position: relative;
+  width: 4em;
+  height: 4em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn2-3 .twitter {
+  margin-top: .25em;
+  margin-left: .1em;
+  fill: #03A9F4;
+}
+
+.btn2-3 .tooltiptext2 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn2-3 .tooltiptext2 .card {
+  width: 6em;
+  height: 6em;
+  background-color: white;
+}
+
+.btn2-3 .tooltiptext2 .account {
+  margin-top: 1em;
+}
+
+.btn2-3 .tooltiptext2 .username {
+  font-size: 15px;
+  margin-top: 0.2em;
+  font-weight: bold;
+}
+
+.btn2-3:hover .tooltiptext2 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn2-3:hover {
+  background-color: #03A9F4;
+}
+
+.btn2-3:hover .twitter {
+  fill: white;
+}
+.btn3-3 {
+  order: 3;
+  position: relative;
+  width: 4em;
+  height: 4em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn3-3 .tooltiptext3 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn3-3 .tooltiptext3 .card {
+  width: 6em;
+  height: 6em;
+  background-color: white;
+}
+
+.btn3-3 .tooltiptext3 .account {
+  margin-top: 1em;
+}
+
+.btn3-3 .tooltiptext3 .username {
+  font-size: 15px;
+  margin-top: .7em;
+  font-weight: bold;
+}
+
+.btn3-3:hover .tooltiptext3 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn3-3:hover {
+  background-color: black;
+}
+
+.btn3-3:hover .git {
+  fill: white;
+}
+/***ARCEO****/
+.Arceo {
+  width: 400px;
+  height: 550px;
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 10px;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Arceo img {
+  order: 1;
+  border-radius: 10px;
+}
+.Arceo h2{
+  order: 2;
+  font-family: 'Vina Sans', cursive;
+  text-transform: uppercase;
+  
+}
+.Arceo h3 {
+  order: 3;
+  font-family: 'Ysabeau', sans-serif;
+}
+.follow4{
+  order: 4;
+  font-family: 'Ysabeau', sans-serif;
+}
+.share4 {
+  width: 100%;
+  order: 5;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  transition: .4s ease-in-out;
+  justify-content: space-evenly;
+}
+
+.btn1-4 {
+  order: 1;
+  position: relative;
+  width: 4em;
+  height: 4em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn1-4 .instagram {
+  margin-top: 0.1em;
+  fill: #cc39a4;
+}
+
+.btn1-4 .tooltiptext1 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+
+}
+
+.btn1-4 .tooltiptext1 .card {
+  width: 6em;
+  height: 6em;
+  background-color: white;
+}
+
+.btn1-4 .tooltiptext1 .account {
+  margin-top: 1em;
+}
+
+.btn1-4 .tooltiptext1 .username {
+  font-size: 15px;
+  margin-top: 0.3em;
+  font-weight: bold;
+}
+
+.btn1-4:hover .tooltiptext1 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn1-4:hover {
+  background-color: #cc39a4;
+}
+
+.btn1-4:hover .instagram {
+  fill: white;
+}
+
+.btn2-4 {
+  order: 2;
+  position: relative;
+  width: 4em;
+  height: 4em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn2-4 .twitter {
+  margin-top: .25em;
+  margin-left: .1em;
+  fill: #03A9F4;
+}
+
+.btn2-4 .tooltiptext2 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn2-4 .tooltiptext2 .card {
+  width: 6em;
+  height: 6em;
+  background-color: white;
+}
+
+.btn2-4 .tooltiptext2 .account {
+  margin-top: 1em;
+}
+
+.btn2-4 .tooltiptext2 .username {
+  font-size: 15px;
+  margin-top: 0.2em;
+  font-weight: bold;
+}
+
+.btn2-4:hover .tooltiptext2 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn2-4:hover {
+  background-color: #03A9F4;
+}
+
+.btn2-4:hover .twitter {
+  fill: white;
+}
+.btn3-4 {
+  order: 3;
+  position: relative;
+  width: 4em;
+  height: 4em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn3-4 .tooltiptext3 {
+  visibility: hidden;
+  width: 6em;
+  height: 8em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn3-4 .tooltiptext3 .card {
+  width: 6em;
+  height: 6em;
+  background-color: white;
+}
+
+.btn3-4 .tooltiptext3 .account {
+  margin-top: 1em;
+}
+
+.btn3-4 .tooltiptext3 .username {
+  font-size: 15px;
+  margin-top: .7em;
+  font-weight: bold;
+}
+
+.btn3-4:hover .tooltiptext3 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn3-4:hover {
+  background-color: black;
+}
+
+.btn3-4:hover .git {
+  fill: white;
+}

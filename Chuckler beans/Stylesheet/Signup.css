@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  .Main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 50vw;
+    margin: auto;
+
+  }
+  
+  .Form {
+    flex: 1;
+    background-color: white;
+    width: 5vw;
+    height: 45vw;
+    border-radius: 10px 0 0 10px;
+    display: inline-block;
+    margin: 50;
+    box-shadow: 40px 30px 30px rgba(255, 255, 255, 0.5);
+  }
+  
+  .rots {
+    flex: 1;
+    background-color: rgb(210, 157, 11);
+    width: 5vw;
+    height: 45vw;
+    background-image: url(../Images/SignUp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 30px 30px 40px rgba(255, 255, 255, 0.5);
+  }
+.Form h2{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.Form p{
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.fName, .eMail, .Password, .cPassword {
+    line-height: 23px;
+    border: 2px solid transparent;
+    border-bottom-color: #f68139;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 20vw;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+   }
+   .fName:focus, .fName:hover,.eMail:focus, .eMail:hover
+   .Password:focus, .Password:hover,.cPassword:focus, .cPassword:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #542903;
+   }
+   .fName::placeholder,.eMail::placeholder,.Password::placeholder,.cPassword::placeholder {
+    color: Black;
+   }
+   .fName:focus::placeholder,.eMail:focus::placeholder,.Password:focus::placeholder,.cPassword:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+   .button1 {
+    --primary-color: #713c06;
+    --secondary-color: #fff;
+    --hover-color: #b77b04;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 140px;
+  }
+  .button1 .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button1 .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  .button1 .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  .button1:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .button1:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  .button1:hover .arrow:before {
+    right: 0;
+  }
+label {
+  text-align: center;
+}
+/***SignIn button**/
+.button2 {
+  --primary-color: #012f14;
+  --secondary-color: #ebeceb;
+  --hover-color: #8adb08;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 140px;
+}
+.button2 .arrow-wrapper2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button2 .arrow2 {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.button2 .arrow2::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.button2:hover {
+  background-color: var(--hover-color);
+}
+
+.button2:hover .arrow2 {
+  background: var(--secondary-color);
+}
+
+.button2:hover .arrow2:before {
+  right: 0;
+}
+h2{
+  color: #5f360d;
+  font-family: 'Vina Sans';
+  font-size: 40px;
+}
+p{
+  font-family: 'Ysabeau', sans-serif;
+  font-size: larger;
+}
+.Images > img {
+  position: absolute;
+  width: 12vw;
+  height: 12vw;
+}
+.txt{
+  font-family: 'Ysabeau', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}

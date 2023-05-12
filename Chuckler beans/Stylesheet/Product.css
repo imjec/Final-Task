@@ -1,0 +1,384 @@
+body{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+  /*****************************************************************NAVBAR********************************************************************/
+nav{
+  width: 100%;
+  height: 5vw;
+  color: white;
+  position: sticky;
+  font-family: 'Leckerli One', cursive;
+  font-size: 40px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  overflow: hidden;
+  
+}
+.logo{
+  width: 1220px;
+  font-size: 40px;
+  position: relative;
+  left: 10px;
+  right: 0;
+  color: #5f360d;
+  font-family: 'Vina Sans';
+
+}
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    color: inherit;
+  }
+  
+  a:visited {
+    color: inherit;
+  }
+  /*****************************************************************Cart and Profile********************************************************************/
+.cart >img{
+  width: 18px;
+  height: 18px;
+}
+.profile >img{
+  width: 18px;
+  height: 18px;
+}
+.cart,.profile{
+  width: 50px;
+  height: auto;
+  transition: .5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 1.5vh;
+  margin: 0 0.6vw;
+  background-color: rgb(241, 191, 53);
+  border-radius: 5px;
+  border: none;
+}
+.cart:before,.profile:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 0.6vh;
+    width: 100%;
+    border-bottom: 4px solid ;
+    border-left: 4px solid ;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+  
+  .cart:after,.profile:after,.about:after,.logout:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+  
+  .cart:hover,.profile:hover,.about:hover,.logout:hover {
+    box-shadow: 0 5px 15px rgba(219, 155, 6, 0.982);
+  }
+  
+  .cart:hover:before,.profile:hover:before,.about:hover:before,.logout:hover:before {
+    border-color: #c75e07;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  .cart:hover:after,.profile:hover:after,.about:hover:after,.logout:hover:after {
+    border-color: #c75e07;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+  }
+/**************************************************************Products****************************************************************/
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 150vw;
+}
+.title{
+  width: 100%;
+  order: 1;
+  font-family: 'Vina Sans';
+  color: #5f360d;
+}
+.title h1{
+  font-family: 'Vina Sans';
+  color: #5f360d;
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.bestseller{
+  order:2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.best1{
+  order: 1;
+  width: 90%;
+  height: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.best1 img{
+  width: 30vw;
+  order: 1;
+  height: 80%;
+  border-radius: 20px;
+  align-self: center;
+  box-shadow: 3px 3px 6px #5f360d;
+}
+.description{
+  width: 50%;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  column-gap: 20px;
+}
+.description h2{
+  color: #5f360d;
+  order: 1;
+  text-align: center;
+  font-family: 'Vina Sans';
+  font-size: 60px;
+}
+.description p {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  order:2;
+  text-align: justify;
+}
+.description button{
+  order:3;
+  border: 1.5px solid black;
+  padding: 10px;
+  width: 100px;
+  margin: 15px;
+  color: #f5f0f0;
+  background-color: #101014;
+  box-shadow: 3px 3px 6px #101014;
+  transition: transform 0.3s ease-in-out;
+  align-self: center;
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+  .description > button:hover {
+    background-color: #f5f0f0;
+    color: #101014;
+    transform: scale(1.2);
+    font-weight: 600;
+  }
+
+.best2{
+  order: 2;
+  width: 80%;
+  height: 50vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.best2 img{
+  width: 30vw;
+  order: 1;
+  height: 80%;
+  border-radius: 20px;
+  align-self: center;
+  box-shadow: 3px 3px 6px #5f360d;
+}
+.description2{
+  width: 50%;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  column-gap: 20px;
+}
+.description2 h2{
+  color: #5f360d;
+  order: 1;
+  text-align: center;
+  font-family: 'Vina Sans';
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.description2 p {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  order:2;
+  text-align: justify;
+}
+.description2 button{
+  order:3;
+  border: 1.5px solid black;
+  padding: 10px;
+  width: 100px;
+  margin: 15px;
+  color: #f5f0f0;
+  background-color: #101014;
+  box-shadow: 3px 3px 6px #101014;
+  transition: transform 0.3s ease-in-out;
+  align-self: center;
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+  .description2 > button:hover {
+    background-color: #f5f0f0;
+    color: #101014;
+    transform: scale(1.2);
+    font-weight: 600;
+  }
+/** other**/
+.other{
+  order: 3;
+  height: 20vw;
+}
+h1{
+  color: #5f360d;
+  text-align: center;
+  font-family: 'Vina Sans';
+  text-transform: uppercase;
+}
+.otherproduct{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin: 30px;
+  
+}
+/**********************************************************Product1**********************************************************/
+.pro1{
+  order:1 ;
+  width: 200px;
+  height: 300px;
+  background-color: #212121;
+  border-radius: 1rem;
+  border: #212121 0.2rem solid;
+  transition: all 0.4s ease-in;
+  box-shadow: 0.4rem 0.4rem 0.6rem #ffffff40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+ .pro1:hover,.pro2:hover,.pro3:hover,.pro4:hover,.pro5:hover {
+  transform: translateY(-1.5rem);
+  border: green 0.2em solid;
+  border-radius: 50px 0 50px 0;
+ }
+.pro1 img,.pro2 img,.pro3 img,.pro4 img,.pro5 img {
+  order: 1;
+  width: 180px;
+  height: 250px;
+  border-radius: 35px;
+  margin-top: 10px;
+}
+.pro1 button,.pro2 button,.pro3 button,.pro4 button,.pro5 button{
+  order:2;
+  border: 1.5px solid black;
+  padding: 10px;
+  width: 100px;
+  margin: 15px;
+  color: #f5f0f0;
+  background-color: #101014;
+  box-shadow: 3px 3px 6px #101014;
+  transition: transform 0.3s ease-in-out;
+  align-self: center;
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+  .pro1 > button:hover,.pro2 > button:hover,.pro3> button:hover,.pro4 > button:hover,.pro5 > button:hover {
+    background-color: #f5f0f0;
+    color: #101014;
+    transform: scale(1.2);
+    font-weight: 600;
+  }
+
+/**********************************************************Product2**********************************************************/
+.pro2{
+  order:2 ;
+  width: 200px;
+  height: 300px;
+  background-color: #212121;
+  border-radius: 1rem;
+  border: #212121 0.2rem solid;
+  transition: all 0.4s ease-in;
+  box-shadow: 0.4rem 0.4rem 0.6rem #ffffff40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pro3{
+  order:3 ;
+  width: 200px;
+  height: 300px;
+  background-color: #212121;
+  border-radius: 1rem;
+  border: #212121 0.2rem solid;
+  transition: all 0.4s ease-in;
+  box-shadow: 0.4rem 0.4rem 0.6rem #ffffff40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pro4{
+  order:4 ;
+  width: 200px;
+  height: 300px;
+  background-color: #212121;
+  border-radius: 1rem;
+  border: #212121 0.2rem solid;
+  transition: all 0.4s ease-in;
+  box-shadow: 0.4rem 0.4rem 0.6rem #ffffff40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pro5{
+  order:5 ;
+  width: 200px;
+  height: 300px;
+  background-color: #212121;
+  border-radius: 1rem;
+  border: #212121 0.2rem solid;
+  transition: all 0.4s ease-in;
+  box-shadow: 0.4rem 0.4rem 0.6rem #ffffff40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
